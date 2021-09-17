@@ -1,0 +1,2 @@
+# ambulance
+static website
