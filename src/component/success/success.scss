@@ -1,0 +1,50 @@
+.success{
+    // background-color: deepskyblue;
+    height: calc(100vh - 20px);
+    display: flex;
+    flex-direction: column;
+
+    .container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #42569D;
+
+        .left{
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            .top{
+                align-items: start;
+
+                h3{
+                    font-size: 40px;
+                    color: white;
+                    padding: 10px 0px;
+                }
+            }
+            .center{
+
+                li{
+                    font-size: 20px;
+                    color: rgb(245, 245, 245);
+                }
+            }
+        }
+        .right{
+            display: flex;
+            align-items: center;
+
+            img{
+                width: 700px;
+                height: 702px;
+               
+            }
+        }
+    }
+}
