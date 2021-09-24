@@ -8,7 +8,7 @@ export default function Home() {
             <div className="wrapper">
                 <div className="container">
                     <div className="textContainer">
-                        <div className="left animate__animated animate__slideInRight">
+                        <div className="left animate__animated animate__slideInLeft">
                             <h3 className="">Lorem ipsum dolor sit amet consectetur adipisicing</h3>
                         </div>
                         <div className="right animate__animated animate__slideInRight">
