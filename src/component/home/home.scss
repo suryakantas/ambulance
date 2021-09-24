@@ -1,4 +1,87 @@
+@import "../../global.scss";
+
 .home{
-    background-color: lightskyblue;
+    height: calc(100vh - 20px);
+    // background: rgb(66,86,157);
     display: flex;
+    align-items: center;
+
+    @include mobile{
+        height: 50%;
+    }
+
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+      
+        .container{
+                align-content: center;
+                background-image: linear-gradient(to right top, #42569d, #7e499d, #b22e87, #d3065c, #dc2424);
+                height: 75vh;
+                max-width: 100%;
+
+                @include mobile{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                 }
+            .textContainer{
+                display: flex;
+                align-items: center;
+               justify-content: space-between;
+               padding: 2% 8% 0%;
+               @include mobile{
+                   display: none;
+               }
+                .left{
+                    width: 350px;
+                    word-wrap: break-word;
+                    animation: normal;
+
+                    // @keyframes normal {
+                    //     100%{
+                    //         float: right;
+                    //     }
+                    // }
+
+                    h3{
+                        font-size: 28px;
+                        color: white;
+                    }
+                }
+                .right{
+                    width: 350px;
+                    word-wrap: break-word;
+                    // margin-left: 350px;
+
+                    p{
+                        font-size: 14px;
+                        color: white;
+                    }
+                }
+            }
+           
+        }
+        .videoContainer{
+            top:20%;
+            margin-left: 115px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position:absolute;
+            width: 84%;
+            img{
+                // width: 850px;
+                height: 470px;
+
+                @include mobile{
+                    // width: 750px;
+                    margin-left: 40px;
+                    height: 295px;
+                }
+            }
+        }
+    }
 }
